@@ -1,0 +1,13 @@
+# Dev-C++ compiled files
+*.exe
+*.o
+
+# Dev-C++ project files
+*.layout
+*.dev
+
+# Debug files
+*.log
+
+#vscode 
+.vscode
