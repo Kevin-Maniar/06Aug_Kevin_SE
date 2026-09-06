@@ -59,6 +59,7 @@ int main()
 		break;
 		default:
 			printf("Have Some Fruits\n");
+		break;
 	}
     return 0;
 }
