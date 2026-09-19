@@ -17,6 +17,7 @@ int main()
 	{
 		printf("ID - %d\n",id[i]);
 		printf("Name - %s\n",name[i]);
+	  	printf("\nAddress = [%d]=%d",i,&name[i] );
 		printf("\n -------------------\n");
 	}
 	
