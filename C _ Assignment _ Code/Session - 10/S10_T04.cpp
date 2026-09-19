@@ -25,11 +25,11 @@ int main()
 	if (len >=5)
 	{
 		full_name[5] = '\0'; 
-		printf("Your UserName is - %s",strcpy(username,full_name));
+		printf("Your UserName is \n @%s",strcpy(username,full_name));
 	}
 	else
 	{
-		printf("Your Username is - %s",full_name);
+		printf("Your Username is \n @%s",full_name);
 	}
 	return 0;
 }
