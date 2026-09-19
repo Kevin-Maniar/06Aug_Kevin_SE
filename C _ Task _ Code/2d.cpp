@@ -6,7 +6,7 @@ int main()
 	scanf("%d",&n);
 	
 	int id [n];
-	char name [n][10];
+	char name [n][20];
 	
 	for(i=0;i<n;i++)
 	{
