@@ -10,14 +10,14 @@
 int main()
 {
 	int cricketScores[3][3];
-	int i,j;
+	int i,j,high;
 	
 	for (i=0;i<3;i++)
 	{
 		printf("Number of Match:%d\n",i+1);
 		for(j=0;j<3;j++)
 	{
-		printf("Enter Score of Team%d:\n",j+1);
+		printf("Enter Score of Team %d:",j+1);
 		scanf("%d",&cricketScores[i][j]);
 	}
 	}
@@ -31,8 +31,21 @@ int main()
 			printf("%d\t",cricketScores[i][j]);
 		}
 		printf("\n");	
+	}	
+	
+	printf("Heights Cricket Scores\n");
+	
+	for(i=0;i<3;i++)
+	{
+		high = cricketScores[i][0];
+		for(j=0;j<3;j++)
+		{
+			if(cricketScores[i][j]>high)
+			{
+				high = cricketScores[i][j];
+			}
+		}
+	printf("Match %d Highest Score:%d\n",i+1,high);
 	}
-	
-	
 	return 0;
 }
