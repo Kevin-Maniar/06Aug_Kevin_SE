@@ -7,24 +7,29 @@
 
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
 
 
 void getUSerInit()
 {
-	char name[] = "VIRAT KOHLI";
-	printf("\n\n");
-	printf("YOUR NAME IS: %s\n\n",name);
-	strupr(name);	
-	printf("Upper Case Applied: %s\n\n",name);
-	strlwr(name);
-	printf("LowerCase Applied: %s\n\n",name);
+	char name[100];
+	int i;
+	printf("Enter Your name:");
+	gets(name);
+	printf("\nYour Name:%c",name[0]);
+	
+	for(i=0;i<name[i] != '\0';i++)
+	{
+		if(name[i] == ' ')
+		{
+			printf("%c",toupper(name[i+1]));
+		}
+	}
 }
 
 int main()
-{	
-	
+{		
 	getUSerInit();
-
 	return 0;
 }
 

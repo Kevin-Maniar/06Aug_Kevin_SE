@@ -5,3 +5,13 @@
 	point ptrLikes to likes, 
 	and print both the value and the address stored in ptrLikes.
 */
+
+#include<stdio.h>
+int main()
+{
+	int like = 100;
+	int *ptrlikes = &like;
+	
+	printf("Likes:%d\n",like);
+	printf("ptrlikes:%d",ptrlikes);
+}
