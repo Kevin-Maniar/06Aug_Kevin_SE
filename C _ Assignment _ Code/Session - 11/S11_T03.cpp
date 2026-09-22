@@ -21,7 +21,5 @@ int main()
 		printf("OrderAmount_%d : %d\n\n",i,order[i]);
 		printf("Memory_Address of OrderAmount_%d : %d\n\n",i,&order[i]);
 	}
-	
-	
 	return 0;
 }
