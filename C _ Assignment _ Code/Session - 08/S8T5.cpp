@@ -21,7 +21,6 @@ int main()
         "banana",
         "john"
     };
-
     for (int i = 0; i < 4; i++)
     {
         capitalize(names[i]);
