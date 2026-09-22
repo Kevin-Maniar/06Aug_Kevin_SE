@@ -12,3 +12,27 @@
 		else{return false;
 	}
 */
+
+#include<stdio.h>
+#include<stdbool.h>
+
+bool isEven(int num)
+{
+	if(num%2 == 0 )
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+int main()
+{
+	int number;
+	number = 204;
+	bool result; 
+	result = isEven(number);
+	printf("%s",result ? "true" : "false");
+	return 0;
+}
