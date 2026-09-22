@@ -8,30 +8,27 @@
 
 #include <stdio.h>
 
-// Pass-by-value: gets a copy, original is untouched
-	void increaseFollowersByValue(int followers) 
-	{
-    followers += 1000;
-//    printf("Inside increaseFollowersByValue: %d\n", followers);
+int followByValue(int follower)
+{
+	//follower = 1000;
+	follower = follower + 1000;
+	printf("Follower By Value inside the function: %d\n",follower);
 }
 
-// Pass-by-reference (via pointer): gets the address, original is modified
-	void increaseFollowersByReference(int *followers) 
-	{
-    *followers += 1000;   // dereference and modify the original
-//    printf("Inside increaseFollowersByReference: %d\n", *followers);
+int followByRef(int *follower)
+{
+	//*follower = 1000;
+	*follower = *follower + 1000;
+	printf("Follower By Reference inside the function: %d\n",*follower);
 }
-
 int main() {
-    int myFollowers = 500;
-
-    increaseFollowersByValue(myFollowers);
-    printf("After increaseFollowersByValue, original: %d\n\n", myFollowers);
-    // Output: 500 (unchanged)
-
-    increaseFollowersByReference(&myFollowers);   // pass the address with &
-    printf("After increaseFollowersByReference, original: %d\n", myFollowers);
-    // Output: 1500 (changed)
-
+	
+	int follower = 5000;
+	printf("Original Followers: %d\n",follower);
+	followByValue(follower);
+	printf("Followers By Value: %d\n",follower);
+	followByRef(&follower);
+	printf("Followers By Reference: %d\n",follower);
+	
     return 0;
 }
