@@ -21,7 +21,8 @@ int followByRef(int *follower)
 	*follower = *follower + 1000;
 	printf("Follower By Reference inside the function: %d\n",*follower);
 }
-int main() {
+int main() 
+{
 	
 	int follower = 5000;
 	printf("Original Followers: %d\n",follower);

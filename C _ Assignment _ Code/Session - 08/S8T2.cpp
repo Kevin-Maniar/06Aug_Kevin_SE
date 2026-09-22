@@ -12,17 +12,18 @@
 
 */
 
-#include<stdio.h>
+#include <stdio.h>
 
+void addToCart(char cart[10][50])
+{
+	printf("%s",cart[0]);
+}
 int main()
 {
-	char cart[100];
-	int i;
-	for (i=0;i<=5;i++)
-	{
-		printf("Enter Products to enter in cart");
-		scanf("%s",cart[i+1]);
-		printf("Product List:%s",cart[i]);
-	}
+	char cart[10][50] = {"Apple","Banana","Kaju"};
+	addToCart(cart);
 }
+
+
+
 
