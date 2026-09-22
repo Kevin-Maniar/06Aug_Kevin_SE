@@ -15,7 +15,6 @@ int main()
 	scanf("%d",&details.id);
 	printf("Name-->\n");
 	scanf("%s",&details.name);
-	
 	printf("Name-->%s",details.name);
 	printf("ID-->%d",details.id);
 

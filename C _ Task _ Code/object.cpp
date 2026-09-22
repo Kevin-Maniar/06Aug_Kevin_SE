@@ -27,6 +27,4 @@ int main()
 	
 	printf("Name-->%s",details2.name);
 	printf("ID-->%d",details2.id);
-
-
 } 
