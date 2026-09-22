@@ -13,17 +13,32 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 
-void addToCart(char cart[10][50])
+void addToCart(char (*cart)[50],char product[10],int *count)
 {
-	printf("%s",cart[0]);
+	strcpy(cart[*count],product);
+	(*count)++;
+	
+	printf("\nUpdated Cart\n");
+	for(int i = 0; i<*count;i++)
+	{
+		printf("Product:%d is %s\n",i,cart[i]);
+	}
+	
 }
 int main()
 {
 	char cart[10][50] = {"Apple","Banana","Kaju"};
-	addToCart(cart);
+	char product[10];
+	int count = 3;
+	printf("Enter Product to add into cart:");
+	scanf("%s",product);	
+	addToCart(cart,product,&count);
+	printf("\n+++++-----\n");
+	printf("Cart Outside the function\n");
+	for(int i=0;i<count;i++)
+	{
+		printf("Cart Item %d: %s\n",i,cart[i]);
+	}
 }
-
-
-
-
