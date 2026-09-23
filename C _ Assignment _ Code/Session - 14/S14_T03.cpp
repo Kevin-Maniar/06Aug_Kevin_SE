@@ -14,7 +14,6 @@ int main()
 	printf("Dear User Enter Your Followers:");
 	scanf("%f",&i);
 	
-	
 	if(i>1000000)
 	{
 		printf("Your Followers: %.1fM",i/1000000.0);
@@ -25,6 +24,6 @@ int main()
 	}
 	else
 	{
-		printf("Your Followers: %f",i);
+		printf("Your Followers: %.0f",i);
 	}
 }
