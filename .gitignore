@@ -1,6 +1,6 @@
 # Dev-C++ compiled files
 *.exe
-*.o
+*.out
 
 # Dev-C++ project files
 *.layout
