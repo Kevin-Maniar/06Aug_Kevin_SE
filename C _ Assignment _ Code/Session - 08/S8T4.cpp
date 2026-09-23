@@ -5,26 +5,33 @@
 	Use this function to display prices for three different products.
 */
 
+#include <stdio.h>
 
-// major logic pending 
-
-#include<stdio.h>
-
-int formatprice(int price,char result[30])
+void formatPrice(int price, char result[])
 {
-	printf("Price:%d\n",price);
-	sprintf(result,"$%d",price);
+    if (price >= 1000)
+    {
+        sprintf(result, "%d,%03d", price / 1000, price % 1000);
+    }
+    else
+    {
+        sprintf(result, "%d", price);
+    }
 }
+
 int main()
 {
-	int price;
-	char result[20];
-	
-	printf("Enter Price:");
-	scanf("%d",&price);
-	
-	formatprice(price,result);
-	
-	printf("Price: %s",result);
-	return 0;
+    char price1[20];
+    char price2[20];
+    char price3[20];
+
+    formatPrice(1599, price1);
+    formatPrice(25999, price2);
+    formatPrice(799, price3);
+
+    printf("Product 1: $%s\n", price1);
+    printf("Product 2: $%s\n", price2);
+    printf("Product 3: $%s\n", price3);
+
+    return 0;
 }

@@ -13,5 +13,5 @@ int main()
 	like = 100;
 	int *ptrlikes = &like;
 	printf("Likes:%d\n",like);
-	printf("ptrlikes:%d",ptrlikes);
+	printf("ptrlikes:%d",&ptrlikes);
 }

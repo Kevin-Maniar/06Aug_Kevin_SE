@@ -16,13 +16,14 @@ void getUSerInit()
 	int i;
 	printf("Enter Your name:");
 	gets(name);
-	printf("\nYour Name:%c",name[0]);
+	printf("\nYour Name:%c",toupper(name[0]));
 	
-	for(i=0;i<name[i] != '\0';i++)
+	for(i=0;name[i] != '\0';i++)
 	{
 		if(name[i] == ' ')
 		{
 			printf("%c",toupper(name[i+1]));
+			
 		}
 	}
 }

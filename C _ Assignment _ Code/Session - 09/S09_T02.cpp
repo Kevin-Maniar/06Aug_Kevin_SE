@@ -9,7 +9,7 @@
 #include<stdio.h>
 int main()
 {
-	char playListRatings[3][5];
+	int playListRatings[3][5];
 	int i,j;
 
 	for (i=0;i<3;i++)

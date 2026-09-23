@@ -23,7 +23,7 @@ int main()
 	scanf("%d",&music.duration);
 	
 	printf("\n========================\n");
-	printf("Aritst: %s\n",music.artist);
+	printf("Artist: %s\n",music.artist);
 	printf("Title: %s\n",music.title);
 	printf("Duration: %d Seconds",music.duration);
 	printf("\n========================\n");
