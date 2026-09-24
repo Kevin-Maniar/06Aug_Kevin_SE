@@ -29,13 +29,20 @@ int main()
 		switch(choice)
 		{
 			case 1:
-			
+				FILE *ob;
+				ob = fopen("music_log.txt","w");
+				printf("File Created! Now Enter Your Loggs\n");
+				printf("----------------------------------------------\n");
+				fprintf(ob,"Your Added Log\n");
+				fprintf(ob,"----------------------------------------------\n");
 				for(i=1;i<=7;i++)
 			{
-				
 				printf("Day %d:-",i);
 				scanf("%d",&min[i]);	
+				fprintf(ob,"Day %d: %d Minutes\n",i,min[i]);					
 			}
+				fprintf(ob,"----------------------------------------------\n");
+				
 				printf("----------------------------------------------\n");
 			break ;
 			

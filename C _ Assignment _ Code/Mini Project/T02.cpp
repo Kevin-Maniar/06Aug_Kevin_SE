@@ -30,8 +30,7 @@ int main()
 	
 		switch(choice)
 		{
-			case 1:
-			
+			case 1:			
 				for(i=1;i<=7;i++)
 			{
 				
