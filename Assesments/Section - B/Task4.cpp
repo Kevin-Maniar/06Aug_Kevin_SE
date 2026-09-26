@@ -79,7 +79,21 @@ int main()
         {
             FILE *ob;
             ob = fopen("expense.txt","w");
-            printf("FILE CREATED");
+            // printf("FILE CREATED");
+
+            fprintf(ob, "\n+----------------------+------------+\n");
+            fprintf(ob,"| %-20s | %-10s |\n", "Expense Category", "Amount");
+            fprintf(ob,"+----------------------+------------+\n");
+
+            for(int i=0;i<n;i++)
+            {
+            fprintf(ob,"| %-20s | %-10.2f |\n", ex[i].category, ex[i].amount);
+            }
+            fprintf(ob,"+----------------------+------------+\n");
+            fprintf(ob,"| %-20s | %-10.2f |\n","Total Expense",total_expense);
+            fprintf(ob,"+----------------------+------------+\n");
+
+
         }
         break;
     
