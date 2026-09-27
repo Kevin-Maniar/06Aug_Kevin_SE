@@ -78,11 +78,11 @@ int main()
 
                 int dayNum, dayMin;
                 int totalMinutes = 0;
-                int maxMinutes = -1;
+                int maxMinutes = 0;
                 int count = 0;
                 char line[256];
 
-                // Skip header lines
+                    // this will skip header line
                 fgets(line, sizeof(line), ob);
                 fgets(line, sizeof(line), ob);
 

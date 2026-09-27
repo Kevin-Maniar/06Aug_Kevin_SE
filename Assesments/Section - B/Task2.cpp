@@ -73,7 +73,7 @@ int main()
 
       for(int j=0;j<hour;j++)
       {
-         printf("*");
+         printf(" * ");
       }
       printf("\n");
    }

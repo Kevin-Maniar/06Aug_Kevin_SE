@@ -13,7 +13,7 @@
 
 int main()
 {    
-    int min[7] = {0}; // Initialize array values to 0
+    int min[7] ;
     int i, choice;
 
     printf("----------------------------------------------\n");
@@ -35,7 +35,8 @@ int main()
         {
             case 1: {
                 FILE *ob = fopen("music_log.txt", "w");
-                if (ob == NULL) {
+                if (ob == NULL) 
+                {
                     printf("Error opening file for writing!\n");
                     break;
                 }
@@ -72,7 +73,8 @@ int main()
 
             case 3: {
                 FILE *ob = fopen("music_log.txt", "r");
-                if (ob == NULL) {
+                if (ob == NULL) 
+                {
                     printf("No saved log found! Please add your logs first (Option 1).\n");
                     printf("----------------------------------------------\n");
                     break;
@@ -80,15 +82,15 @@ int main()
 
                 int dayNum, dayMin;
                 int totalMinutes = 0;
-                int maxMinutes = -1;
+                int maxMinutes = 0;
                 int count = 0;
                 char line[256];
 
-                // Skip header lines
+                // this will Skip header lines
                 fgets(line, sizeof(line), ob);
                 fgets(line, sizeof(line), ob);
 
-                // Read day data from music_log.txt
+                // Reading day data from music_log.txt
                 while (fscanf(ob, "Day %d: %d Minutes\n", &dayNum, &dayMin) == 2) {
                     totalMinutes += dayMin;
                     if (dayMin > maxMinutes) {
@@ -98,9 +100,11 @@ int main()
                 }
                 fclose(ob);
 
-                if (count == 0) {
+                if (count == 0) 
+                {
                     printf("File is empty or formatted incorrectly.\n");
-                } else {
+                } else 
+                {
                     float averageMinutes = (float)totalMinutes / count;
 
                     printf("----------------------------------------------\n");
@@ -117,43 +121,50 @@ int main()
             case 4: {
                 char confirm;
                 printf("Are you sure you want to reset all weekly data? (y/n): ");
-                scanf(" %c", &confirm); // Space before %c skips leftover newline characters
+                scanf(" %c", &confirm);
 
                 if (confirm == 'y' || confirm == 'Y') {
                     // 1. Reset array elements in memory to 0
-                    for(i = 0; i < 7; i++) {
+                    for(i = 0; i < 7; i++) 
+                    {
                         min[i] = 0;
                     }
 
                     // 2. Clear file contents by opening in write mode and closing immediately
                     FILE *ob = fopen("music_log.txt", "w");
-                    if (ob != NULL) {
+                    if (ob != NULL) 
+                    {
                         fclose(ob);
                         printf("Weekly data cleared and music_log.txt deleted/emptied successfully!\n");
-                    } else {
+                    } else 
+                    {
                         printf("Error resetting file.\n");
                     }
-                } else {
+                } else 
+                {
                     printf("Reset operation cancelled.\n");
                 }
                 printf("----------------------------------------------\n");
                 break;
             }
             
-            case 5: {
+            case 5: 
+            {
                 printf("Logging out! Visit Again\n");
                 printf("----------------------------------------------\n");
                 break;
             }
         
-            default: {
+            default: 
+            {
                 printf("Error! Please enter 1, 2, 3, 4, or 5 only.\n");
                 printf("----------------------------------------------\n");
                 break;
             }
         }
         
-        if (choice == 5) {
+        if (choice == 5) 
+        {
             break;
         }        
     }
