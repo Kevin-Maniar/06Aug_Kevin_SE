@@ -11,3 +11,7 @@
 
 #vscode 
 .vscode
+
+#assignment's docx file 
+*.docx
+*.doc
