@@ -1,4 +1,5 @@
 /*
+   Task - 2 Weekly Study Hours Analyzer
     Build a program that records a student's daily study hours for 7 days, stores them in an array,
     and generates a performance summary.
 
