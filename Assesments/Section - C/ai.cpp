@@ -33,15 +33,19 @@ void print_subject_statistics(void) {
 void print_progress_chart(void) {
     int i, j, k;
     printf("\n================ PROGRESS CHART ================\n");
-    for (i = 0; i < NUM_SUBJECTS; i++) {
+    for (i = 0; i < NUM_SUBJECTS; i++) 
+    {
         printf("\nSubject: %s\n", st[i].subject);
-        for (j = 0; j < DAYS_IN_WEEK; j++) {
+        for (j = 0; j < DAYS_IN_WEEK; j++) 
+        {
             int dots = (int)st[i].hours[j]; // Truncate to nearest integer
             printf("  Day %d: ", j + 1);
-            for (k = 0; k < dots; k++) {
+            for (k = 0; k < dots; k++) 
+            {
                 printf("• ");
             }
-            if (dots == 0) {
+            if (dots == 0) 
+            {
                 printf("-");
             }
             printf(" (%.1f hrs)\n", st[i].hours[j]);
@@ -95,7 +99,7 @@ int main(void) {
 
             case 3: {
                 // Save records to file as CSV format
-                FILE *fp = fopen("productivity_log.txt", "w");
+                FILE *fp = fopen("productivity_log.txt", "a");
                 if (fp == NULL) {
                     printf("Error opening file for writing!\n");
                     return 1;
