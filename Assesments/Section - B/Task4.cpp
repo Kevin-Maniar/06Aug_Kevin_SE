@@ -22,7 +22,7 @@ struct expense
 
 int main()
 {
-    int n=2;
+    int n=10;
     int choice;
     float total_expense = 0;
 
