@@ -1,4 +1,5 @@
 /*
+    Task - 1 Grade Band Checker
     Build a console program that accepts a student's percentage score and prints their letter
     grade along with a short motivational message.
     1. Accept a float percentage value as user input using scanf().
