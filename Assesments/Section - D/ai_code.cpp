@@ -20,7 +20,6 @@
     displays the sorted list. & Prints whether the mean is closer to the minimum, 
     closer to the maximum, or exactly midway between them.  
 */
-
 #include <stdio.h>
 
 int main()
