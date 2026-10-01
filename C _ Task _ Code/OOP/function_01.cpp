@@ -1,14 +1,3 @@
-/* 
-    void main()
-
-    void get_data()
-    {
-    
-    }
-
-
-*/
-
 #include<iostream>
 
 using namespace std;
