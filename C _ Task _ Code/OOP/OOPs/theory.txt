@@ -1,0 +1,21 @@
+OOP - 
+========================================================
+
+1.) class :- 
+2.) Object:- 
+3.) Inheritance:-
+        - single 
+        - Multiple  many to one
+        - multilevel
+        - hierarchical one to many
+        - hybrid
+4.) Encapsulation / data binding
+5.) Polymorphism 
+        - method overloading
+        - method overriding
+
+6.) Access specifier / modifier / data hiding
+        - public 
+        - private by default 
+        - protected 
+
