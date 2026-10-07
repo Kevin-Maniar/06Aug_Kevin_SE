@@ -1,0 +1,8 @@
+/* 
+    Compare your procedural C version and OOP TaskList version: 
+    List 3 problems you faced in the C version that were solved by using 
+    classes and methods in the OOP version.
+*/
+
+
+i will do this later.

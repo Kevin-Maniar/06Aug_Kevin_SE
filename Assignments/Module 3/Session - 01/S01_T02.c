@@ -20,7 +20,7 @@ void add_tasks()
 
     printf("How many tasks do you want to add?:-");
     scanf("%d",&n);
-    // getchar();
+    getchar();
 
     if(n>0 && n<6)
     {
@@ -48,8 +48,6 @@ void print_task()
         printf("\nTask[%d] --> %s status[%s]",i+1,tasks[i],status[i]);
     }
 }
-
-
 int main()
 {
     add_tasks();
