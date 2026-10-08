@@ -16,7 +16,7 @@ class foodOrder
 {
     protected:
     int order_id = 77 ;
-    string hotel_name = "Shiv Shakti Restaurant";
+    string hotel_name = "Food Bar";
     bool isDelivered = false;
 
     public:
