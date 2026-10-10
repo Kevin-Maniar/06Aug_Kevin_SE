@@ -22,3 +22,29 @@ class SpotifyPlayer extends MusicPlayer
     Hint: 
     This tests runtime polymorphism (overriding) and dynamic method dispatch.</em>
  */
+
+#include<iostream>
+using namespace std;
+class MusicPlayer 
+{   public:
+    virtual void play(string song)
+    {
+        cout<<"Playing:-"<<song<<endl;
+    }
+};
+
+class SpotifyPlayer : public MusicPlayer
+{
+    public:
+    void play(string song) override
+    {
+        cout<<"Streaming on Spotify:-"<<song<<endl;
+    }
+};
+int main()
+{
+    MusicPlayer* ob = new SpotifyPlayer;
+    ob->play("Sunn");
+    delete ob;
+    return 0;
+}
