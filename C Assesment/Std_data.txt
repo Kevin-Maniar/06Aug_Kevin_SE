@@ -1,0 +1,20 @@
+Student 1 Id :- 202
+Student 1 Name:- Jay
+Student 1 Mobile:- 5050550505
+Student 1 City:- Morbi
+==========================================
+Student 2 Id :- 202
+Student 2 Name:- Jay
+Student 2 Mobile:- 5050550505
+Student 2 City:- Morbi
+==========================================
+Student 1 Id :- 202222
+Student 1 Name:- Kevin
+Student 1 Mobile:- 9327050571
+Student 1 City:- Rajkot
+==========================================
+Student 2 Id :- 30302
+Student 2 Name:- Rahul
+Student 2 Mobile:- 8050580505
+Student 2 City:- Delhi
+==========================================
