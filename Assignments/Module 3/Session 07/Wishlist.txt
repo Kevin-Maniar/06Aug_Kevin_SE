@@ -1,9 +1,9 @@
-Product 1's Name: Mivi Phone 5g
-Product 1's Price: 14999
+Product 1's Name: Keyboard
+Product 1's Price: 150
 ------------------------
-Product 2's Name: Zeb Thunder
-Product 2's Price: 999
+Product 2's Name: Mouse
+Product 2's Price: 100
 ------------------------
-Product 3's Name: Smart Watch
-Product 3's Price: 1499
+Product 3's Name: CPU
+Product 3's Price: 5000
 ------------------------

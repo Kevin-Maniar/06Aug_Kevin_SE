@@ -6,8 +6,6 @@
     Write the file-saving code inside the destructor.</em>
 */
 
-// File concept pending will do later .....
-
 #include<iostream>
 #include<fstream>
 using namespace std;
