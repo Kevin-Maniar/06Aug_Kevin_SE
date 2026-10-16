@@ -1,0 +1,10 @@
+Title    : Podcast on gym
+PLatform : Instagram and Youtube
+Views    : 0
+Status   : Draft
+------------------------------
+Title    : Ai Reel
+PLatform : Instagram 
+Views    : 900
+Status   : Published
+------------------------------
