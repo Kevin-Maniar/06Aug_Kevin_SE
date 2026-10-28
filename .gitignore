@@ -15,3 +15,7 @@
 #assignment's docx file 
 *.docx
 *.doc
+
+#ignore database file 
+*.db
+
